@@ -125,11 +125,12 @@
     transform: translateX(-50%);
     display: flex;
     gap: 25px;
-    padding: 0 20px;
+    
 }
 
 .header-block {
-    width: 280px;
+    border: 1px solid #FFFFFF;
+    width: 278px;
     height: 47px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -140,7 +141,6 @@
     font-size: 32px;
     color: #3D3D3D;
     flex-shrink: 0;
-    border: 1px solid #FFFFFF;
     
 }
 
@@ -254,11 +254,105 @@
 .shedule-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px 25px; /* Вертикальный отступ 18px, горизонтальный 25px */
-    max-width: calc(5*(280px + 25px) - 25px); /* Расчет ширины для 5 колонок */
+    gap: 18px 25px; 
+    max-width: calc(5*(280px + 25px) - 25px); 
 }
 
 
+/* Что это блять*/
 
+.schedule-grid {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.time-column {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.time-cell {
+    height: 150px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 24px;
+    color: #3D3D3D;
+}
+
+.day-column {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.day-cell {
+    height: 150px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 20px;
+    color: #3D3D3D;
+    transition: transform 0.2s ease;
+}
+
+.day-cell.has-class {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.class-name {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.class-type {
+    font-size: 16px;
+    color: #636363;
+    margin-bottom: 5px;
+}
+
+.class-location {
+    font-size: 16px;
+    color: #636363;
+    margin-bottom: 5px;
+}
+
+.class-teacher {
+    font-size: 14px;
+    color: #8A8A8A;
+}
+
+.subgroup-1 {
+    border-left: 4px solid #45ffd0;
+}
+
+.subgroup-2 {
+    border-left: 4px solid #ff8d8d;
+}
+
+.day-cell:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
 

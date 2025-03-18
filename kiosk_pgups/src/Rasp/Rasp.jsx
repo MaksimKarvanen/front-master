@@ -208,10 +208,55 @@ function Rasp() {
                     ))}
                 </div>
 
-
                 {/* Сетка расписания */}
-                
-                
+                <div className="schedule-grid">
+                    {/* Колонка времени */}
+                    <div className="time-column">
+                        <div className="time-cell"></div>
+                        <div className="time-cell"></div>
+                        <div className="time-cell"></div>
+                        <div className="time-cell"></div>
+                        <div className="time-cell"></div>
+                    </div>
+
+                    {/* Колонки дней недели */}
+                    <div className="day-column">
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                    </div>
+                    <div className="day-column">
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                    </div>
+                    <div className="day-column">
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                    </div>
+                    <div className="day-column">
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                    </div>
+                    <div className="day-column">
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                        <div className="day-cell"></div>
+                    </div>
+                </div>
+
             </div>
         </>
     );
