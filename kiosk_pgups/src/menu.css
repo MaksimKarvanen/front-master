@@ -1,0 +1,138 @@
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.time2{
+    position: absolute;
+    top: 10%;
+    left: 36px;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 24px;
+}
+.menu {
+    background-color: #F6F6F6;
+    height: 68px;
+    width: 639px;
+    border-radius: 52px;
+    border: 1px solid #C5C4C4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.menubutton, .selectButton {
+    background-color: transparent;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 24px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.selectButton {
+    background-color: #8D8D8D;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #F6F6F6;
+    border: 1px solid #C5C4C4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 101px;
+    right: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.toggle-button {
+    width: 65px;
+    height: 68px;
+    border-radius: 50%;
+    border: 1px solid #C5C4C4;
+    background-color: white;
+    font-size: 24px;
+    font-family: "Inria Sans", sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: auto;
+
+}
+.toggle-container p {
+    font-size: 30px;
+    font-family:  "Inria Sans" ,sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    position: absolute;
+    height: 68px;
+    width: 360px;
+    background-color: #ffffff;
+    border-radius: 52px;
+    border: 1px solid #C5C4C4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    right: 133px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+}
+
+#search {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    width: 270px;
+    padding: 10px;
+}
+
+.search-container .divider {
+    width: 1px;
+    height: 68px;
+    background-color: #E2E2E2;
+    margin: 0 10px;
+}
+
+.Search {
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    background: url("./icon/Search.svg");
+    height: 45px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+}

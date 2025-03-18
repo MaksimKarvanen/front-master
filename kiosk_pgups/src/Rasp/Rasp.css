@@ -1,0 +1,264 @@
+.your_css_selector {
+    background-color: hsla(271, 0%, 100%, 1);
+    background-image: radial-gradient(circle at 40% 20%, hsla(52.1028226964614, 100%, 74%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 0%, hsla(189, 100%, 56%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 50%, hsl(355, 69%, 62%) 0%, transparent 50%), radial-gradient(circle at 80% 50%, hsl(341, 74%, 55%) 0%, transparent 50%), radial-gradient(circle at 0% 100%, hsla(22, 100%, 77%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 100%, hsla(242, 100%, 70%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 0%, hsla(343, 100%, 76%, 1) 0%, transparent 50%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.rasp-choice-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.rasp-choice-container h1 {
+    font-family: 'Gilroy-Medium', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: #FFFFFF; 
+    font-weight: 400;
+    font-size: 64px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+.rasp-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.rasp-choice-button {
+    width: 275px;
+    height: 116px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 60px;
+    color: #636363;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rasp-choice-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background: #f8f8f8;
+}
+
+.rasp-choice-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    width: 1920px;
+}
+
+.search-hint {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    width: 557px;
+    height: 84px;
+    color: #FFFFFF; 
+    font-family: 'Gilroy-Medium', sans-serif; 
+    font-size: 32px; 
+    font-weight: 400; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    z-index: 10; 
+}
+.test {
+    z-index: 1000;
+    color: #000000;
+    position: relative;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 20px;
+    top:30px;
+    left:50px;
+}
+
+
+/* ---------------------------shedule---------------------------- */
+
+.schedule-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.schedule-header {
+    position: absolute;
+    top: 131px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.header-block {
+    width: 280px;
+    height: 47px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 32px;
+    color: #3D3D3D;
+    flex-shrink: 0;
+    border: 1px solid #FFFFFF;
+    
+}
+
+.subgroup-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Распределяет пространство между элементами */
+    width: 280px; /* Ширина блока */
+    height: 47px; /* Высота блока */
+    background: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон */
+    border-radius: 10px; /* Скругление углов */
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 32px;
+    color: #636363;
+    position: relative; /* Для позиционирования subgroup-selector */
+}
+
+.subgroup-block p {
+    margin: 0; /* Убираем отступы у текста */
+    font-size: 30px; /* Размер текста */
+    color: #000000; /* Цвет текста */
+    padding-left: 15px;
+}
+
+.subgroup-block span:first-child {
+    font-size: 20px;
+}
+
+.subgroup-block span:last-child {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.subgroup-block {
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: 1px solid #C5C4C4;
+    
+}
+
+.subgroup-selector {
+    width: 101px;
+    height: 47px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    overflow: hidden;
+    background: #ACF1E0; 
+    
+}
+
+.subgroup-selector::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(99, 99, 99, 0.3);
+}
+
+.subgroup-btn {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+
+.subgroup-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(61, 1, 1, 0.3);
+}
+
+.left-btn::after {
+    right: 0;
+}
+
+.right-btn::after {
+    left: 0;
+}
+
+.subgroup-btn:hover {
+    background: rgba(0, 0, 0, 0.158);
+}
+
+.active-subgroup-1 {
+    background: #45ffd0 !important;
+}
+
+.active-subgroup-2 {
+    background: #ff8d8d !important;
+}
+
+
+.shedule-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 25px; /* Вертикальный отступ 18px, горизонтальный 25px */
+    max-width: calc(5*(280px + 25px) - 25px); /* Расчет ширины для 5 колонок */
+}
+
+
+
+
+
